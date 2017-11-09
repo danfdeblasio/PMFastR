@@ -378,7 +378,7 @@ void Alignment::Do_node(int j){
 		struct thread_info *t = new thread_info();
 		t->a = this;
 		t->j = tl;
-		thread1[tl] = *thread1;
+		//threads[tl] = *thread1;
 		pthread_create(&thread1,
 					   NULL,
 					   do_thread,
