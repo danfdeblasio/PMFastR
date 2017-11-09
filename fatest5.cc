@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <iostream>
-#include "string"
+#include <string.h>
 #include "stockholmbuffer.h"
 #include "filebuffer.h"
 #include "fastalignment.5.h"
 #include "stack.h"
 #include <unistd.h>
+#include <cstdlib>
 using namespace std;
 
 int main(int argc, char* argv[])      {
@@ -37,7 +38,7 @@ char na_name[17] = {'a', 'c', 'g', 't', 'n', 'r', 'y', 'w', 's', 'm',
 	//cout << getpid() << endl;
 	char* c = new char[100];
 	sprintf(c,"more /proc/%d/status > %s-out",getpid(),argv[0]);
-	system(c);
+  system(c);
 	delete fb1;
 	delete fb2;
 	delete ali;

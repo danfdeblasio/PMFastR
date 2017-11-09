@@ -8,4 +8,3 @@ rna_compare5 - This takes in a single sequence (stk format) and a query (fasta f
 
 rna_compare6 - This is a single thread version of the alignment takes in a profile (stok format) and a query (fasta format) and an output file name (stok format)
 
-rna_compare8 - this is a multi threaded version of rna_compare6, same input parameters

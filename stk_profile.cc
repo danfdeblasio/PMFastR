@@ -11,6 +11,7 @@
 //#include "na.h"
 #include "stk_profile.h"
 //#include "na.h"
+#include <string.h>
 
 using namespace std;
 

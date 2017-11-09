@@ -8,4 +8,4 @@ rna_compare8: fastalignment.8.cc fastalignment.8.h fatest6.cc filebuffer.cc stac
 queue.o: queue.cc queue.h
 	g++ -w  -Wno-deprecated -c queue.cc
 clean:
-	rm rna_compare5 rna_compare6 rna_compare8 queue.o 
+	rm -f rna_compare5 rna_compare6 rna_compare8 queue.o 

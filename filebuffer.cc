@@ -7,6 +7,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <iostream>
+#include <string.h>
 #include "na.h"
 #include "filebuffer.h"
 
@@ -16,7 +17,7 @@ FileBuffer::FileBuffer(char *filename, int muxnum) 	{
 	int n=0;
 	
 	seq = new char[muxnum];
-	std::ifstream from(filename);
+	ifstream from(filename);
 	while (from.getline(str, 450))	{
 		if (str[0] == '#') 	{
 			continue;

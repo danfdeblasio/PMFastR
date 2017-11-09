@@ -6,6 +6,7 @@
 #include "fastalignment.6.h"
 #include "stack.h"
 #include <unistd.h>
+#include <cstdlib>
 
 using namespace std; 
 

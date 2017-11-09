@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <fstream>
-#include "string"
+#include <string.h>
 #include "stack.h"
 #include "fastalignment.5.h"
 #include "weight3.h"

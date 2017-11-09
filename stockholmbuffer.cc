@@ -7,6 +7,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <iostream>
+#include <string.h>
 #include "stockholmbuffer.h"
 
 using namespace std;
@@ -21,7 +22,7 @@ StockholmBuffer::StockholmBuffer(char *filename, int maxnum) 	{
 	co = cc = 0;	
 	seq = new char[maxnum];
 	structure = new int[maxnum];
-	std::ifstream from(filename);
+	ifstream from(filename);
 	while (from.getline(str, 450))	{
 		if (str[0] == '#') {
 			sprintf(name,str);
